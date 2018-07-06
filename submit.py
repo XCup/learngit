@@ -26,8 +26,8 @@ def add():
 
 #提交本地版本库
 def commit():
-    inputNote = raw_input("请输入提交内容:").decode('utf-8')
-    archiveCmd = "git commit -m ' " + inputNote + "'"
+    inputNote = input("请输入提交内容:").encode('utf-8')
+    archiveCmd = "git commit -m inputNote "
     process = subprocess.Popen(archiveCmd,shell=True)
     process.wait()
     archiveReturnCode = process.returncode
