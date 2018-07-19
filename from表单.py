@@ -17,14 +17,14 @@ class indexHandler(tornado.web.RequestHandler):
                                 <input type="submit">\
                             </form>\
                             <form action="index" method="next">\
-                                <input type="submit">\
+                                <input type="button" >\
                             </form>\
                         </body>\
                         </html>'
                    )
     def post(self, *args, **kwargs):
         message=self.get_argument('commit')
-        self.write("ing")
+        self.write("<input type='button' value='Click me' onclick='msg()/>")
 
         def status():
             archiveCmd = 'git status'
