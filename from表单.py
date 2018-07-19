@@ -13,12 +13,14 @@ class indexHandler(tornado.web.RequestHandler):
                     </head>\
                     <body>\
                         <form action="index" method="post">\
-                            <input type="submit">\
-                        </form>\
-                    </body>\
-                    </html>'
+                                <input tyoe="text" placeholder="commit -m" name="commit">\
+                                <input type="submit">\
+                            </form>\
+                        </body>\
+                        </html>'
                    )
     def post(self, *args, **kwargs):
+        commit=self.get_argument('commit')
         self.write("ing")
 
         def status():
