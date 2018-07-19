@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ce1d1f65-72fb-4b3e-8a10-b3c14a8f017c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/from表单.py" beforeDir="false" afterPath="$PROJECT_DIR$/from表单.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tornadoo.py" beforeDir="false" afterPath="$PROJECT_DIR$/tornadoo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +17,8 @@
     <SUITE FILE_PATH="coverage/learngit$submit.coverage" NAME="submit Coverage Results" MODIFIED="1531987188218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/learngit$gitpython.coverage" NAME="gitpython Coverage Results" MODIFIED="1531726437503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/learngit$webgit.coverage" NAME="webgit Coverage Results" MODIFIED="1531282229233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/learngit$from.coverage" NAME="from表单 Coverage Results" MODIFIED="1531990108432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/learngit$ajax.coverage" NAME="ajax Coverage Results" MODIFIED="1531991483619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/learngit$from.coverage" NAME="from表单 Coverage Results" MODIFIED="1531992319504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/learngit$tornadoo.coverage" NAME="tornadoo Coverage Results" MODIFIED="1531989740306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/learngit$urls.coverage" NAME="urls Coverage Results" MODIFIED="1531282703283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/HelloWorld/HelloWorld" />
   </component>
@@ -27,7 +27,7 @@
       <file leaf-file-name="submit.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/submit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
+            <state relative-caret-position="456">
               <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
             </state>
           </provider>
@@ -48,13 +48,11 @@
       <file leaf-file-name="from表单.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/from表单.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="285">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding>
                 <element signature="e#25#39#0" expanded="true" />
-                <element signature="e#756#1061#0" />
-                <element signature="e#1882#2160#0" />
-                <element signature="e#2205#2495#0" />
+                <element signature="e#1111#1395#0" />
               </folding>
             </state>
           </provider>
@@ -94,6 +92,8 @@
         <option value="$PROJECT_DIR$/submit.py" />
         <option value="$PROJECT_DIR$/huatu.py" />
         <option value="$PROJECT_DIR$/tornadoo.py" />
+        <option value="$PROJECT_DIR$/ajax.html" />
+        <option value="$PROJECT_DIR$/ajax.py" />
         <option value="$PROJECT_DIR$/from表单.py" />
       </list>
     </option>
@@ -108,8 +108,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="531" />
-    <option name="y" value="-21" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="972" />
     <option name="height" value="1087" />
   </component>
@@ -157,8 +157,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.submit">
-    <configuration name="submita.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learngit/submita.html" />
+  <component name="RunManager" selected="Python.ajax">
+    <configuration name="ajax.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learngit/ajax.html" />
+    <configuration name="ajax" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="learngit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ajax.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="from表单" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="learngit" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,25 +192,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/from表单.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="huatu" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="learngit" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/huatu.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -237,18 +237,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.tornadoo" />
-      <item itemvalue="JavaScript Debug.submita.html" />
       <item itemvalue="Python.from表单" />
-      <item itemvalue="Python.huatu" />
       <item itemvalue="Python.submit" />
+      <item itemvalue="JavaScript Debug.ajax.html" />
+      <item itemvalue="Python.ajax" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.from表单" />
+        <item itemvalue="Python.ajax" />
+        <item itemvalue="JavaScript Debug.ajax.html" />
         <item itemvalue="Python.tornadoo" />
         <item itemvalue="Python.submit" />
-        <item itemvalue="Python.huatu" />
-        <item itemvalue="JavaScript Debug.submita.html" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +274,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32914045" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3322949" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2793354" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3301887" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11513859" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -300,10 +300,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/submit.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelloWorld/HelloWorld/__init__.py" />
     <entry file="file://$PROJECT_DIR$/gitpython.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -505,13 +501,6 @@
     <entry file="file://$PROJECT_DIR$/huatu.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/submit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tornadoo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -522,15 +511,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/submit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-166">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/from表单.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="285">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding>
             <element signature="e#25#39#0" expanded="true" />
-            <element signature="e#756#1061#0" />
-            <element signature="e#1882#2160#0" />
-            <element signature="e#2205#2495#0" />
+            <element signature="e#1111#1395#0" />
           </folding>
         </state>
       </provider>
