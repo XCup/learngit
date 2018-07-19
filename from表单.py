@@ -13,7 +13,10 @@ class indexHandler(tornado.web.RequestHandler):
                     </head>\
                     <body>\
                         <form action="index" method="post">\
-                                <input tyoe="text" placeholder="commit -m" name="commit">\
+                                <input type="text" placeholder="commit -m" name="commit">\
+                                <input type="submit">\
+                            </form>\
+                            <form action="index" method="next">\
                                 <input type="submit">\
                             </form>\
                         </body>\
@@ -86,6 +89,8 @@ class indexHandler(tornado.web.RequestHandler):
 
         if __name__ == '__main__':
             main()
+    def next(self, *args, **kwargs):
+        self.write('aaa')
 if __name__ == '__main__':
     app=tornado.web.Application([
         ('/index',indexHandler)
