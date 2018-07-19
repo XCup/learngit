@@ -12,19 +12,17 @@ class indexHandler(tornado.web.RequestHandler):
                         <title>form</title>\
                     </head>\
                     <body>\
-                        <form action="index" method="post">\
+                        <form action="" method="post">\
                                 <input type="text" placeholder="commit -m" name="commit">\
                                 <input type="submit">\
-                            </form>\
-                            <form action="index" method="next">\
-                                <input type="button" >\
-                            </form>\
-                        </body>\
-                        </html>'
+                                <input type="button" value="pull" onclick=msg()>\
+                        </form>\
+                    </body>\
+                    </html>'
                    )
     def post(self, *args, **kwargs):
         message=self.get_argument('commit')
-        self.write("<input type='button' value='Click me' onclick='msg()/>")
+        self.write("finish")
 
         def status():
             archiveCmd = 'git status'
@@ -89,11 +87,9 @@ class indexHandler(tornado.web.RequestHandler):
 
         if __name__ == '__main__':
             main()
-    def next(self, *args, **kwargs):
-        self.write('aaa')
 if __name__ == '__main__':
     app=tornado.web.Application([
-        ('/index',indexHandler)
+        ('/',indexHandler)
     ]
     )
     app.listen(8889)

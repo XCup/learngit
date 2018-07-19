@@ -7,7 +7,7 @@ import tornado.web
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        self.write("hallo")
+        self.write("<input type=button value=a> ")
 
 
 application = tornado.web.Application([
