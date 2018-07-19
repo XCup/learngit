@@ -57,7 +57,7 @@ class indexHandler(tornado.web.RequestHandler):
             else:
                 print("提交成功"), message
                 pull()
-
+#123
         # 拉取
         def pull():
             archiveCmd = 'git pull'
