@@ -56,7 +56,7 @@ class indexHandler(tornado.web.RequestHandler):
             else:
                 print("提交成功"), message
                 pull()
-#123
+
         # 拉取
         def pull():
             archiveCmd = 'git pull'
@@ -85,9 +85,59 @@ class indexHandler(tornado.web.RequestHandler):
 
         if __name__ == '__main__':
             main()
+class indexHandler1(tornado.web.RequestHandler):
+    def get(self, *args, **kwargs):
+        self.write('<!DOCTYPE html>\
+                    <html lang="en">\
+                    <head>\
+                        <meta charset="UTF-8">\
+                        <title>form</title>\
+                    </head>\
+                    <body>\
+                            <form action="" method="post">\
+                                <input type="text" placeholder="commit -m" name="commit">\
+                                <input type="submit">\
+                            </form>\
+                        </body>\
+                        </html>'
+                   )
+    def post(self, *args, **kwargs):
+        message=self.get_argument('commit')
+        self.write("finish")
+
+        def status():
+            archiveCmd = 'git status'
+            process = subprocess.Popen(archiveCmd, shell=True)
+            process.wait()
+            archiveReturnCode = process.returncode
+            if archiveReturnCode != 0:
+                print("查看工作区状态错误")
+            else:
+                pull()
+
+            return True
+
+        # 拉取
+        def pull():
+            archiveCmd = 'git pull'
+            process = subprocess.Popen(archiveCmd, shell=True)
+            process.wait()
+            archiveReturnCode = process.returncode
+            if archiveReturnCode != 0:
+                print("拉取远程代码失败")
+            else:
+                print("拉去成功")
+
+
+        def main():
+            status()
+
+        if __name__ == '__main__':
+            main()
 if __name__ == '__main__':
     app=tornado.web.Application([
-        ('/',indexHandler)
+        ('/index',indexHandler1),
+        ('/', indexHandler),
     ]
     )
     app.listen(8889)
