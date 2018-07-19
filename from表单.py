@@ -48,15 +48,14 @@ class indexHandler(tornado.web.RequestHandler):
 
         # 提交本地版本库
         def commit():
-            inputNote = message.encode('utf-8')
-            archiveCmd = "git commit -m inputNote "
+            archiveCmd = "git commit -m message "
             process = subprocess.Popen(archiveCmd, shell=True)
             process.wait()
             archiveReturnCode = process.returncode
             if archiveReturnCode != 0:
                 print("提交失败")
             else:
-                print("提交成功"), inputNote
+                print("提交成功"), message
                 pull()
 
         # 拉取
