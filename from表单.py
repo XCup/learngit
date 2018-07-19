@@ -20,7 +20,7 @@ class indexHandler(tornado.web.RequestHandler):
                         </html>'
                    )
     def post(self, *args, **kwargs):
-        commit=self.get_argument('commit')
+        message=self.get_argument('commit')
         self.write("ing")
 
         def status():
@@ -47,7 +47,7 @@ class indexHandler(tornado.web.RequestHandler):
 
         # 提交本地版本库
         def commit():
-            inputNote = input("请输入提交内容:").encode('utf-8')
+            inputNote = message.encode('utf-8')
             archiveCmd = "git commit -m inputNote "
             process = subprocess.Popen(archiveCmd, shell=True)
             process.wait()
