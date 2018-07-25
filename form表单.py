@@ -95,8 +95,7 @@ class indexHandler1(tornado.web.RequestHandler):
                     </head>\
                     <body>\
                             <form action="" method="post">\
-                                <input type="text" placeholder="commit -m" name="commit">\
-                                <input type="submit">\
+                                <input type="submit" value="拉取">\
                             </form>\
                         </body>\
                         </html>'
@@ -126,7 +125,7 @@ class indexHandler1(tornado.web.RequestHandler):
             if archiveReturnCode != 0:
                 print("拉取远程代码失败")
             else:
-                print("拉去成功")
+                print("拉取成功")
 
 
         def main():
