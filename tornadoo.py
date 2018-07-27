@@ -2,13 +2,14 @@
 # -*- coding:utf-8 -*-
 import tornado.ioloop
 import tornado.web
-
+import subprocess
 
 class LoginHandler(tornado.web.RequestHandler):
-    def get(self,*args,**kwargs):
+    def get(self, *args, **kwargs):
         self.render("tijiao.html")
 
-
+    def post(self, *args, **kwargs):
+        self.write("finish")
 
 
 class pushHandler(tornado.web.RequestHandler):
